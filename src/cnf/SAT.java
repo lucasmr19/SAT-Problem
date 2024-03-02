@@ -53,7 +53,8 @@ public class SAT {
             return new LocalSearchSolution(best_configuration, tryCount, flipCount);
         }
     } 
-
-    public static LocalSearchSolution solveSAT(CNF F, int Max_tries, int Max_flips) throws IllegalArgumentException{
+    
+    public static LocalSearchSolution solveSAT(CNF F, int Max_tries, int Max_flips) throws IllegalArgumentException {
         return solveSAT(F, Max_tries, Max_flips, null);
     }
+}
